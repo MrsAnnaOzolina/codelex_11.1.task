@@ -1,21 +1,114 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/styles.css">
-    <title>Document</title>
+    <title>Codelex 11.task</title>
 </head>
-<body>
-    <h1>
-        Hello World
-    </h1>
-    <img src="/assets/images/cat.jpeg" alt="" width="300">
 
+<body>
+    <div class="container">
+        <div class="dog js-dog">
+            <button class="button dog__button--js-back">
+                <p class="button__text">
+                    < </p>
+            </button>
+            <img class="dog__picture fade" src="assets/images/Lulu7.JPG" width="300px" alt="Lulu">
+            <button class="button dog__button--js-forward">
+                <p class="button__text"> > </p>
+            </button>
+        </div>
+
+        <div class="dog js-dog1">
+            <button class="button dog__button--js-back">
+                <p class="button__text">
+                    < </p>
+            </button>
+            <img class="dog__picture fade" src="assets/images/Lulu7.JPG" width="300px" alt="Lulu">
+            <button class="button dog__button--js-forward">
+                <p class="button__text"> > </p>
+            </button>
+            <div></div>
+            <div class="alldots">
+                <span class="dot dot0" id="0" style="display:none "></span>
+                <span class="dot dot1" id="1"></span>
+                <span class="dot dot2" id="2"></span>
+                <span class="dot dot3" id="3"></span>
+                <span class="dot dot4" id="4" style="display:none "></span>
+            </div>
+        </div>
+
+        <div class="dog js-dog2">
+            <button class="button dog__button--js-back">
+                <p class="button__text">
+                    < </p>
+            </button>
+            <img class="dog__picture fade" src="assets/images/Lulu7.JPG" width="300px" alt="Lulu">
+            <button class="button dog__button--js-forward">
+                <p class="button__text"> > </p>
+            </button>
+            <div class="dog__smallPictures">
+                <img class="dog__smallPiture--1" src="assets/images/Lulu5.JPG" width="70px">
+                <img class="dog__smallPiture--2"  src="assets/images/Lulu6.JPG" width="70px">
+                <img class="dog__smallPiture--3"  src="assets/images/Lulu7.JPG" width="70px">
+                <img class="dog__smallPiture--4"  src="assets/images/Lulu8.JPG" width="70px">
+                <img class="dog__smallPiture--5"  src="assets/images/Lulu9.JPG" width="70px">
+            </div>
+           
+            <div></div>
+            <div class="alldots">
+                <span class="dot dot0" id="0"></span>
+                <span class="dot dot1" id="1"></span>
+                <span class="dot dot2" id="2"></span>
+                <span class="dot dot3" id="3"></span>
+                <span class="dot dot4" id="4"></span>
+                
+            </div>
+        </div>
+        <div class="dog js-dog3">
+          
+            <button class="button dog__button--js-back">
+                <p class="button__text">
+                    < </p>
+            </button>
+            <img class="dog__picture fade" src="assets/images/Lulu7.JPG" width="300px" alt="Lulu">
+            <!-- <div class="dog_picture2"></div> -->
+            <button class="button dog__button--js-forward">
+                <p class="button__text"> > </p>
+            </button>
+            <div class="dog__smallPictures">
+                <img class="dog__smallPiture--1" src="assets/images/Lulu5.JPG" width="70px">
+                <img class="dog__smallPiture--2"  src="assets/images/Lulu6.JPG" width="70px">
+                <img class="dog__smallPiture--3"  src="assets/images/Lulu7.JPG" width="70px">
+                <img class="dog__smallPiture--4"  src="assets/images/Lulu8.JPG" width="70px">
+                <img class="dog__smallPiture--5"  src="assets/images/Lulu9.JPG" width="70px">
+            </div>
+           
+            <div></div>
+            <div class="alldots">
+                <span class="dot dot0" id="0"></span>
+                <span class="dot dot1" id="1"></span>
+                <span class="dot dot2" id="2"></span>
+                <span class="dot dot3" id="3"></span>
+                <span class="dot dot4" id="4"></span>
+                
+            </div>
+            <div class="dog__zoom">
+                <button class="button__zoom">ZOOM </button>
+                <p class="dog__zoom--text">Set main image full screen </p>
+            </div>
+            <div class="fullpage" onclick="this.style.display='none';">
+            </div>
+        </div>
+    </div>
+  
 
     <script src="/scripts.js"></script>
 </body>
+
 </html>

@@ -1,3 +1,105 @@
 body {
-  background-color: antiquewhite;
+  background-color: rgb(49, 46, 46);
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 60px;
+  gap: 100px
+}
+
+.dog {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  background-color: rgb(146, 153, 153);
+  min-height: 500px;
+  max-width: 626px;
+ // align-items: center;
+  // justify-content: center;
+  
+}
+.dog__picture{
+  margin-top: 10px;
+}
+.button{
+ width: 100px;
+
+ background-color: rgb(146, 153, 153) ;
+ color:rgb(61, 54, 69);
+ opacity: 0.3;
+ border:none;
+ &:hover{
+  zoom: 1.1;
+  transition: 5s;
+  
+ }
+}
+.button__text{
+  font-size:50px;
+  margin: 0;
+}
+
+.fade{
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.dot {
+  z-index: 1;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+ // transition: background-color 0.6s ease;
+}
+
+
+.dot2{
+background-color: darkgrey;
+}
+
+.dog__smallPictures{
+grid-column-start:1;
+grid-column-end: 4;
+justify-self: center;
+}
+.dog__zoom{
+
+  grid-column-start:2;
+grid-column-end: 3;
+grid-row-start: 4;
+}
+.dog__zoom--text{
+  display: inline-block;
+}
+
+.fullpage {
+  display: none;
+  position: absolute;
+  z-index: 9999;
+  top: 1550px;
+   left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+  
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+ opacity: 0.9;
+  
+  
+}
+
+.dog_picture2{
+
+  width:300px;
 }
