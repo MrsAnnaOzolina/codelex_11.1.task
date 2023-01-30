@@ -275,11 +275,11 @@ zoomButton:HTMLButtonElement
 fullPage:HTMLDivElement
     imageTimer: NodeJS.Timer;
 
-    i:number = 2;
+    i:number = 1;
     numberI:number 
     constructor(selector:string){
         super(selector)
-        this.dogpicture = this.rootElement.querySelector(".dog_picture2")
+        this.dogpicture = document.querySelector(".dog_picture2")
         this.zoomButton = this.rootElement.querySelector(".button__zoom");
         this.fullPage = this.rootElement.querySelector('.fullpage');
 
@@ -287,38 +287,94 @@ this.timer();
  
     }
 timer(){
-    this.imageTimer = setInterval(imageTimers,3000)
+    this.imageTimer = setInterval(imageTimers,1000)
     this.zoomButton.addEventListener("click", ()=>{
         this.pictureNumber = this.pictureElement.src.toString().charAt(40)
         this.fullPage.style.display="block"
         this.fullPage.style.backgroundImage = `url('assets/images/Lulu${this.pictureNumber}.JPG')`
     })
-
-
-
-
-  //  let imgArray = ["assets/images/Lulu5.JPG", "assets/images/Lulu6.JPG", "assets/images/Lulu7.JPG", "assets/images/Lulu8.JPG", "assets/images/Lulu9.JPG"];
-
-   this.dot0.addEventListener('click',()=>{
-    clearInterval(this.imageTimer);
-       setTimeout(() =>{
-        this.imageTimer = setInterval(imageTimers,3000)
-} , 1000 ) 
+   
+    this.dot0.addEventListener('click', () => {
+        clearInterval(this.imageTimer);
+        setTimeout(() => {
+            this.imageTimer = setInterval(imageTimers, 3000)
+        }, 1000)
+    })
+    this.dot1.addEventListener('click', () => {
+        clearInterval(this.imageTimer);
+        setTimeout(() => {
+            this.imageTimer = setInterval(imageTimers, 3000)
+        }, 1000)
+    })
+    this.dot2.addEventListener('click', () => {
+        clearInterval(this.imageTimer);
+        setTimeout(() => {
+            this.imageTimer = setInterval(imageTimers, 3000)
+        }, 1000)
+    })
+    this.dot3.addEventListener('click', () => {
+        clearInterval(this.imageTimer);
+        setTimeout(() => {
+            this.imageTimer = setInterval(imageTimers, 3000)
+        }, 1000)
+    })
+    this.dot4.addEventListener('click', () => {
+        clearInterval(this.imageTimer);
+        setTimeout(() => {
+            this.imageTimer = setInterval(imageTimers, 3000)
+        }, 1000)
+    })
+    this.smlImg1.addEventListener("click", ()=>{
+        clearInterval(this.imageTimer);
+        setTimeout(() => {
+            this.imageTimer = setInterval(imageTimers, 3000)
+        }, 1000)
+    })
+    this.smlImg2.addEventListener("click", ()=>{
+        clearInterval(this.imageTimer);
+        setTimeout(() => {
+            this.imageTimer = setInterval(imageTimers, 3000)
+        }, 1000)
+    })
+    this.smlImg3.addEventListener("click", ()=>{
+        clearInterval(this.imageTimer);
+        setTimeout(() => {
+            this.imageTimer = setInterval(imageTimers, 3000)
+        }, 1000)
+    })
+    this.smlImg4.addEventListener("click", ()=>{
+        clearInterval(this.imageTimer);
+        setTimeout(() => {
+            this.imageTimer = setInterval(imageTimers, 3000)
+        }, 1000)
+    })
+    this.smlImg5.addEventListener("click", ()=>{
+        clearInterval(this.imageTimer);
+        setTimeout(() => {
+            this.imageTimer = setInterval(imageTimers, 3000)
+        }, 1000)
+    })
+    this.backButtton.addEventListener("click", ()=> {
+        clearInterval(this.imageTimer);
+        setTimeout(() => {
+            this.imageTimer = setInterval(imageTimers, 3000)
+        }, 1000)
     })
 
     let n = this.i
     
     function imageTimers(){
-        if (n === 2){
-            n = n+1;
-          // this.dogpicture
-         // this.dogpicture.style.display = "inline"
-        //this.pictureElement.style.display = "none"
-         // this.dogpicture.innerHTML += `<img src="assets/images/Lulu${n}.JPG">`;
-        } else if(n === 3 ) {
-            n = n+1;
-        }else if(n > 4 ) {
-            n = n+1;
+        n = n+1
+        if (n >1 && n < 10){
+            console.log(`assets/images/Lulu${n}.JPG`)
+           // this.pictureElement.src += `assets/images/Lulu${n}.JPG`;
+        // this.dogpicture.style.display = "inline-block"
+       // this.pictureElement.style.display = "none"
+        // this.dogpicture.src = `assets/images/Lulu${n.toString()}.JPG`;
+        }
+        else {
+            n=1
+          
         }
     }
 }
